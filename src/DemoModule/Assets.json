@@ -1,0 +1,26 @@
+﻿[
+    {
+        "inputs": [ "Assets/System.ts" ],
+        "output": "Scripts/System.js",
+        "typeScriptOptions": {
+            "lib": [ "es2015", "dom" ],
+            "noImplicitAny": true
+        }
+    },
+    {
+        "inputs": [ "Assets/Wizard/*.ts" ],
+        "output": "Scripts/Wizard/@.js",
+        "typeScriptOptions": {
+            "target": "es5",
+            "emitDecoratorMetadata": true,
+            "experimentalDecorators": true,
+            "lib": [ "es2015", "dom" ],
+            "noImplicitAny": true,
+            "suppressImplicitAnyIndexErrors": true
+        }
+    },
+    {
+        "inputs": [ "Assets/Wizard/*.scss" ],
+        "output": "Styles/Wizard/@.css"
+    }
+]

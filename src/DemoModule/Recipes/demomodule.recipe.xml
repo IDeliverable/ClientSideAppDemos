@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Orchard>
+    <Recipe>
+        <Name>Client-side App Demos</Name>
+        <Description>A recipe providing demo content and configuration for building client-side apps.</Description>
+        <Author>IDeliverable, Ltd.</Author>
+        <WebSite>http://www.ideliverable.com</WebSite>
+        <Tags>developer</Tags>
+        <Version>1.0</Version>
+        <IsSetupRecipe>false</IsSetupRecipe>
+    </Recipe>
+    <Feature enable="DemoApi, DemoModule, Orchard.Layouts.Snippets" />
+    <Settings>
+        <ApiSiteSettingsPart ApiUrl="http://localhost:30321/OrchardLocal/api/DemoApi/StockInfo" />
+    </Settings>
+    <Content>
+        <Page Id="/alias=stockinfo-demo" Status="Published">
+            <AutoroutePart Alias="stockinfo-demo" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-02-16T04:58:34.3298277Z" PublishedUtc="2017-02-16T04:58:34.3298277Z" ModifiedUtc="2017-02-16T04:58:34.3118118Z" />
+            <LayoutPart>
+                <LayoutData>
+                    <![CDATA[
+{
+  "elements": [
+    {
+      "typeName": "Orchard.Layouts.Elements.Canvas",
+      "data": "",
+      "exportableData": "",
+      "index": 0,
+      "elements": [
+        {
+          "typeName": "Orchard.Layouts.Elements.Grid",
+          "data": "",
+          "exportableData": "",
+          "index": 0,
+          "elements": [
+            {
+              "typeName": "Orchard.Layouts.Elements.Row",
+              "data": "",
+              "exportableData": "",
+              "index": 0,
+              "elements": [
+                {
+                  "typeName": "Orchard.Layouts.Elements.Column",
+                  "data": "Width=4&Offset=0&Collapsible=null",
+                  "exportableData": "",
+                  "index": 0,
+                  "elements": [
+                    {
+                      "typeName": "stockinfosnippet",
+                      "data": "ProductId=A&Body=%3ch4%3eThe+A+Product%3c%2fh4%3e%0d%0a%3cp%3eHurry%2c+run+to+one+of+these+stores+and+buy+this+%3cstrong%3ewonderful%3c%2fstrong%3e+product!%3c%2fp%3e",
+                      "exportableData": "",
+                      "index": 0,
+                      "elements": [],
+                      "isTemplated": false,
+                      "htmlId": "",
+                      "htmlClass": "",
+                      "htmlStyle": "",
+                      "rule": ""
+                    }
+                  ],
+                  "isTemplated": false,
+                  "htmlId": null,
+                  "htmlClass": null,
+                  "htmlStyle": null,
+                  "rule": null
+                },
+                {
+                  "typeName": "Orchard.Layouts.Elements.Column",
+                  "data": "Width=4&Offset=0&Collapsible=null",
+                  "exportableData": "",
+                  "index": 1,
+                  "elements": [
+                    {
+                      "typeName": "stockinfosnippet",
+                      "data": "ProductId=B&Body=%3cp%3eJust+buy+it.+You+won%27t+regret+it.%3c%2fp%3e",
+                      "exportableData": "",
+                      "index": 0,
+                      "elements": [],
+                      "isTemplated": false,
+                      "htmlId": "",
+                      "htmlClass": "",
+                      "htmlStyle": "",
+                      "rule": ""
+                    }
+                  ],
+                  "isTemplated": false,
+                  "htmlId": null,
+                  "htmlClass": null,
+                  "htmlStyle": null,
+                  "rule": null
+                },
+                {
+                  "typeName": "Orchard.Layouts.Elements.Column",
+                  "data": "Width=4&Offset=0&Collapsible=null",
+                  "exportableData": "",
+                  "index": 2,
+                  "elements": [],
+                  "isTemplated": false,
+                  "htmlId": null,
+                  "htmlClass": null,
+                  "htmlStyle": null,
+                  "rule": null
+                }
+              ],
+              "isTemplated": false,
+              "htmlId": null,
+              "htmlClass": null,
+              "htmlStyle": null,
+              "rule": null
+            }
+          ],
+          "isTemplated": false,
+          "htmlId": "",
+          "htmlClass": "",
+          "htmlStyle": "",
+          "rule": ""
+        }
+      ],
+      "isTemplated": false,
+      "htmlId": "",
+      "htmlClass": "",
+      "htmlStyle": "",
+      "rule": ""
+    }
+  ]
+}
+]]>
+                </LayoutData>
+            </LayoutPart>
+            <TagsPart Tags="" />
+            <TitlePart Title="StockInfo Demo" />
+        </Page>
+        <Page Id="/alias=wizard-demo" Status="Published">
+            <AutoroutePart Alias="wizard-demo" UseCustomPattern="false" UseCulturePattern="false" PromoteToHomePage="false" />
+            <CommonPart Owner="/User.UserName=admin" CreatedUtc="2017-02-16T04:59:13.5392598Z" PublishedUtc="2017-02-16T04:59:13.5392598Z" ModifiedUtc="2017-02-16T04:59:13.5302617Z" />
+            <LayoutPart>
+                <LayoutData>
+                    <![CDATA[
+{
+  "elements": [
+    {
+      "typeName": "Orchard.Layouts.Elements.Canvas",
+      "data": "",
+      "exportableData": "",
+      "index": 0,
+      "elements": [
+        {
+          "typeName": "Orchard.Layouts.Elements.Grid",
+          "data": "",
+          "exportableData": "",
+          "index": 0,
+          "elements": [
+            {
+              "typeName": "Orchard.Layouts.Elements.Row",
+              "data": "",
+              "exportableData": "",
+              "index": 0,
+              "elements": [
+                {
+                  "typeName": "Orchard.Layouts.Elements.Column",
+                  "data": "Width=4&Offset=0&Collapsible=null",
+                  "exportableData": "",
+                  "index": 0,
+                  "elements": [
+                    {
+                      "typeName": "wizardsnippet",
+                      "data": "",
+                      "exportableData": "",
+                      "index": 0,
+                      "elements": [],
+                      "isTemplated": false,
+                      "htmlId": null,
+                      "htmlClass": null,
+                      "htmlStyle": null,
+                      "rule": null
+                    }
+                  ],
+                  "isTemplated": false,
+                  "htmlId": null,
+                  "htmlClass": null,
+                  "htmlStyle": null,
+                  "rule": null
+                },
+                {
+                  "typeName": "Orchard.Layouts.Elements.Column",
+                  "data": "Width=4&Offset=0&Collapsible=null",
+                  "exportableData": "",
+                  "index": 1,
+                  "elements": [],
+                  "isTemplated": false,
+                  "htmlId": null,
+                  "htmlClass": null,
+                  "htmlStyle": null,
+                  "rule": null
+                },
+                {
+                  "typeName": "Orchard.Layouts.Elements.Column",
+                  "data": "Width=4&Offset=0&Collapsible=null",
+                  "exportableData": "",
+                  "index": 2,
+                  "elements": [],
+                  "isTemplated": false,
+                  "htmlId": null,
+                  "htmlClass": null,
+                  "htmlStyle": null,
+                  "rule": null
+                }
+              ],
+              "isTemplated": false,
+              "htmlId": null,
+              "htmlClass": null,
+              "htmlStyle": null,
+              "rule": null
+            }
+          ],
+          "isTemplated": false,
+          "htmlId": "",
+          "htmlClass": "",
+          "htmlStyle": "",
+          "rule": ""
+        }
+      ],
+      "isTemplated": false,
+      "htmlId": "",
+      "htmlClass": "",
+      "htmlStyle": "",
+      "rule": ""
+    }
+  ]
+}
+]]>
+                </LayoutData>
+            </LayoutPart>
+            <TagsPart Tags="" />
+            <TitlePart Title="Wizard Demo" />
+        </Page>
+    </Content>
+</Orchard>

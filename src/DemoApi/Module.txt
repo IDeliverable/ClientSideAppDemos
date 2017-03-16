@@ -1,0 +1,9 @@
+﻿Name: DemoApi
+AntiForgery: enabled
+Author: IDeliverable, Ltd.
+Website: http://www.ideliverable.com
+Version: 1.0
+OrchardVersion: 1.10
+Description: Demo API for building client-side components for Orchard.
+FeatureDescription: Demo API for building client-side components for Orchard.
+Category: Developer

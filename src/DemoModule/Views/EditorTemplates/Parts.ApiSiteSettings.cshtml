@@ -1,0 +1,9 @@
+﻿@model DemoModule.Models.ApiSiteSettingsPart
+<fieldset>
+	<legend>@T("API Settings")</legend>
+	<div>
+		@Html.LabelFor(m => m.ApiUrl, T("API URL"))
+		@Html.TextBoxFor(m => m.ApiUrl, new { @class = "textMedium" })
+		@Html.Hint(T("The URL for the backend REST API."))
+	</div>
+</fieldset>

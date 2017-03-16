@@ -1,0 +1,8 @@
+﻿@model Orchard.Layouts.ViewModels.SnippetFieldViewModel
+<div class="form-group">
+    @Html.Label(Model.Descriptor.Name, Model.Descriptor.DisplayName.ToString())
+    @Display.Body_Editor(PropertyName: Model.Descriptor.Name, Text: Model.Value, EditorFlavor: "html", Required: false, AutoFocus: false)
+    @if (Model.Descriptor.Description != null) {
+        @Html.Hint(Model.Descriptor.Description)
+    }
+</div>

@@ -1,0 +1,23 @@
+﻿@{
+    Script.Require("StockInfo").AtHead();
+
+    var elementId = String.Format("stockInfo-{0}", Guid.NewGuid());
+
+    using (Script.Head())
+    {
+        <script>
+            initStockInfo("@elementId", {
+                apiUrl: "@Model.ApiUrl",
+                productId: "@Model.ProductId"
+            });
+        </script>
+    }
+}
+
+<div class="stockInfo">
+    @Html.Raw(Model.Body)
+    <div id="@elementId">
+        <div class="stockInfo-spinner"></div>
+        <p>Loading stock availability for product <strong>@Model.ProductId</strong>...</p>
+    </div>
+</div>

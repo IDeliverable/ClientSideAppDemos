@@ -1,0 +1,8 @@
+﻿<ul class="stockInfo-list">
+    {{#each stockLocations as |stockLocation stockLocationKey|}}
+    <li class="stockInfo-item">
+        <span class="stockInfo-location">{{stockLocation.City}}, {{stockLocation.Country}}</span><br />
+        <span class="stockInfo-units">{{stockLocation.UnitsInStock}}</span> units in stock
+    </li>
+    {{/each}}
+</ul>

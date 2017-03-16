@@ -1,0 +1,10 @@
+﻿Name: DemoModule
+AntiForgery: enabled
+Author: IDeliverable, Ltd.
+Website: http://www.ideliverable.com
+Version: 1.0
+OrchardVersion: 1.10
+Description: Demo code for building client-side components for Orchard.
+FeatureDescription: Demo code for building client-side components for Orchard.
+Dependencies: Orchard.Layouts, Orchard.Layouts.Snippets, DemoApi
+Category: Developer

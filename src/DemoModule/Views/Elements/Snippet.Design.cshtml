@@ -1,0 +1,19 @@
+﻿@using Orchard.Layouts.Elements
+@using Orchard.Layouts.Helpers
+@using Orchard.Layouts.Models
+@{
+	var element = (Snippet)Model.Element;
+	var snippetDescriptor = (SnippetDescriptor)Model.Snippet.SnippetDescriptor;
+}
+<div class="element-snippet layout-placeholder">
+	@T("{0}", element.Descriptor.DisplayText)
+	@if (snippetDescriptor != null && snippetDescriptor.Fields.Any())
+	{
+		<ul>
+			@foreach (var field in snippetDescriptor.Fields)
+			{
+				<li>@field.DisplayName: @Display.Elements_Snippet_Field_Design(Value: element.Data.Get(field.Name), Type: field.Type)</li>
+			}
+		</ul>
+	}
+</div>

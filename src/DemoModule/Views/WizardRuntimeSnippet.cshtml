@@ -1,0 +1,11 @@
+﻿@{
+    Script.Require("jQuery").AtHead(); // Because jQuery will otherwise be loaded at the foot.
+    Script.Require("System").AtHead();
+    Style.Include("Wizard/Wizard.css", "Wizard/Wizard.min.css");
+}
+
+<script>
+    System.import("wizard").catch(function (err) { console.error(err); });
+</script>
+
+<wizard>Loading wizard...</wizard>

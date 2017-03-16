@@ -1,0 +1,55 @@
+﻿// Styling that should be provided by the component:
+
+.stockInfo {
+    padding: 1em;
+
+    .stockInfo-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stockInfo-item {
+        padding: 1em;
+
+        + .stockInfo-item {
+            margin-top: 1em;
+        }
+    }
+}
+
+// Styling that should come from the theme:
+
+.stockInfo {
+    background-color: #f6f6f6;
+
+    .stockInfo-item {
+        background-color: #ebebeb;
+    }
+
+    .stockInfo-location {
+        font-weight: bold;
+    }
+
+    .stockInfo-units {
+        display: inline-block;
+        position: relative;
+        top: 4px;
+        font-size: 2em;
+        color: red;
+    }
+
+    .stockInfo-spinner {
+        width: 40px;
+        height: 40px;
+        margin: 100px auto;
+        background-color: #333;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+    }
+
+    @keyframes sk-rotateplane {
+        0% { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+        50% { transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+        100% { transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); }
+    }
+}

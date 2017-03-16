@@ -1,0 +1,13 @@
+﻿DisplayName: Product Stock Info
+ToolboxIcon: \uf0d1
+Description: Displays stock availability for a given product.
+Category: Shop
+Fields:
+  - Name: ProductId
+    Type: Text
+    DisplayName: Product ID
+    Description: The ID of the product to show stock information for.
+  - Name: Body
+    Type: Html
+    DisplayName: Body
+    Description: Optional content to display above the stock information.

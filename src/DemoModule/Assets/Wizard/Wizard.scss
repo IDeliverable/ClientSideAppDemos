@@ -1,0 +1,21 @@
+﻿.wizard {
+    background-color: #f6f6f6;
+    padding: 1em;
+
+    nav {
+        margin-bottom: 1em;
+    }
+
+    .wizard-step {
+        height: 300px;
+        padding: 1em;
+
+        &.wizard-step_one {
+            background-color: lightcoral;
+        }
+
+        &.wizard-step_two {
+            background-color: lightblue;
+        }
+    }
+}
